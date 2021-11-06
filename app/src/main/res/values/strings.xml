@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">MatheBasic</string>
+    <string name="version_app">Versión 1.1.0</string>
+    <string name="Aprendizaje">Aprendizaje</string>
+    <string name="usuarioP">abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ1234567890</string>
+
+    <!-- APRENDIZAJE. -->
+    <string name="suma1">Acá empezas a familiarizarte con el método de izquierda a derecha. Primero sumas las decenas del segundo número al primero y, por último, las unidades del segundo número al resultado anterior.</string>
+    <string name="suma2">Este ejemplo es más dificil porque las unidades suman un núumero mayor que 10</string>
+    <string name="resta1">Acá empiezas a familiarizarte con el método de izquierda a derecha. Primero restas las decenas del segundo número al primero y, por último, las unidades del segundo número al resultado anterior.</string>
+    <string name="multi1">Para resolver multiplicaciones mentalmente, tambien tienes que familiarizarte con hacerlo de izquierda a derecha, multiplicando primero las decenas del numero mayor y luego las unidades.</string>
+    <string name="multi2">Al final se suman progresivamente los resultados parciales.</string>
+    <string name="division1">Para resolver divisiones mentalmente, también tenes que familiarizarte con hacerlo de izquiera a derecha, dividiendo primero el divisor entre dos, al igual que el dividendo y luego dividir ambos resultados.</string>
+    <string name="division2">El objetivo es reducir al máximo la expresión</string>
+
+    <!-- REGISTRO. -->
+    <string name="ventaja1">  Acceder facilmente a la aplicación</string>
+    <string name="ventaja2"> Cuentas en un mismo dispositivo para la familia y amigos</string>
+    <string name="ventaja3"> Ver tu historial de partidas</string>
+
+</resources>

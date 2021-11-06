@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_fondo"
+    tools:context=".Pprincipal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="11.3"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="5"
+            android:paddingRight="10dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5.5"
+                    android:gravity="center">
+
+                    <Spinner
+                        android:id="@+id/spnAprendizaje"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4.5"
+                    android:gravity="right"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="5dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/tvUsuario"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:background="#FFFFFF"
+                            android:text=""
+                            android:textColor="#000000"
+                            android:textSize="12dp" />
+
+                        <Button
+                            android:id="@+id/btnRegistrarse"
+                            android:layout_width="100dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="right"
+                            android:background="#FFFFFF"
+                            android:onClick="CerrarSesion"
+                            android:text="Cerrar Sesion"
+                            android:textSize="10dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_account" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingTop="20dp"
+            android:paddingRight="30dp"
+            android:paddingLeft="30dp"
+            android:paddingBottom="30dp">
+
+            <ImageView
+                android:id="@+id/ivPoster"
+                android:layout_width="210dp"
+                android:layout_height="210dp"
+                android:layout_gravity="center"
+                android:src="@drawable/principal" />
+
+            <Button
+                android:id="@+id/btnJugar"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_weight="10"
+                android:background="@drawable/btndesign_principal"
+                android:elevation="5dp"
+                android:onClick="Jugar"
+                android:text="JUGAR"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="10"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnResultados"
+                    android:layout_width="fill_parent"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="50dp"
+                    android:layout_weight="4"
+                    android:background="@drawable/btndesign_principal"
+                    android:onClick="Resultados"
+                    android:text="RESULTADOS"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnMultijugador"
+                    android:layout_width="fill_parent"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_weight="4"
+                    android:background="@drawable/btndesign_principal"
+                    android:onClick="Multijugador"
+                    android:text="MULTIJUGADOR"
+                    android:textColor="@color/white"
+                    android:autoSizeTextType="none"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnAboutAs"
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:background="#FFFFFF"
+                android:drawableLeft="@drawable/ic_help"
+                android:onClick="acAboutAs"
+                android:paddingLeft="8dp"
+                android:text=" Acerca De"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="5.3"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvDeveloped"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:text="Developed by MatheBasic"
+                android:textColor="@color/texto"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,2 @@
+rootProject.name='MatheBasic'
+include ':app'
